@@ -1,0 +1,40 @@
+.kasa__header {
+  max-width: 1280px;
+  height: 80px;
+  /*margin: 3% 0 3%  0;*/
+  padding: 2rem;
+}
+.kasa__header--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-weight: 500;
+  height: 68px;
+  margin-bottom: 10px;
+}
+.kasa__header--nav {
+  width: 260px;
+}
+.kasa__header--ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 260px;
+  padding-left: 0;
+}
+.kasa__header--btn1 {
+  cursor: pointer;
+  font-size: 24px;
+}
+.kasa__header--btn2 {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.kasa__logo {
+  height: 68px;
+  width: 210px;
+}

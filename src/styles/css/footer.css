@@ -1,0 +1,18 @@
+.kasa__footer {
+  background-color: black;
+  height: 209px;
+  width: 100%;
+}
+.kasa__footer--elem {
+  color: white;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.kasa__footer .kasa__logonb {
+  margin-bottom: 40px;
+}
