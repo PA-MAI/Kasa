@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react'
-
 import '../../../styles/css/index.css'
-import Footer from '../../Footer'
-import Header from '../../Header'
 import Banner from './Banner'
 import Gallery from './Gallery';
 
@@ -24,9 +21,7 @@ function Home() {
   return (
   <div>
     <div className='kasa__top'>
-       <div>
-          <Header />
-        </div>
+      
         <div>
           <Banner />
         </div>
@@ -37,9 +32,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <Footer />
-      </div>
+      
     </div>
   );
 }

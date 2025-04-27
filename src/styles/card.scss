@@ -7,9 +7,9 @@
     margin: 10px;
     display: inline-block;
     text-align: center;
-  }
   
-  .card__cover {
+  
+  &__cover {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -17,46 +17,74 @@
     border-top-right-radius: 10px;
   }
   
-  .card__details {
+  &__details {
     padding: 10px;
+    & h2{
+      color: #FF6060;
+      font-size: 18px;
+      margin:0;
+      height:44px;
+    }
+    & p{
+      font-size: 18px;
+      margin-top: 8px;
+    }
+    &--rating {
+      width:120px;
+    }
+    
+    &--tags {
+      margin-top: 10px;
+    }
+    
+    &--tag {/*revoir*/
+      background-color: #eee;
+      padding: 5px;
+      margin-right: 5px;
+      border-radius: 3px;
+    }
+    
+    &--pictures{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    &--thumbnail {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    &--thumbnail:hover {
+      opacity: 0.7;
+    }
   }
-  .card__details h2{
-    color: #FF6060;
-    font-size: 18px;
-    margin:0;
-  }
-  .card__details--rating span {
-    color: #ffcc00;
-  }
+
+}  
+
+.rating{
+  width:180px;
+  padding-bottom: 10px;
+}
+
+.fa-star {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  height: 10px;
+  width: 10px;
   
-  .card__details--tags {
-    margin-top: 10px;
-  }
-  
-  .card__details--tag {
-    background-color: #eee;
-    padding: 5px;
-    margin-right: 5px;
-    border-radius: 3px;
-  }
-  
-  .card__details--pictures{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .card__details--thumbnail {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .card__details--thumbnail:hover {
-    opacity: 0.7;
-  }
-  
-  
+}
+
+.red {
+  color: #FF6060;
+  height: 10px;
+}
+
+.grey {
+  color: #E3E3E3;
+  height: 10px;
+}  

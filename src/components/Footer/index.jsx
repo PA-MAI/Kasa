@@ -1,6 +1,6 @@
 
-import '../styles/css/footer.css'
-import logonb from '../assets/svg/LOGONB.svg'
+import '../../styles/css/footer.css'
+import logonb from '../../assets/svg/LOGONB.svg'
 
 function Footer() {
 
