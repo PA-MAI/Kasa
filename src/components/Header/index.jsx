@@ -12,8 +12,8 @@ function Header() {
                 <img src={logocolor} alt='Logo Kasa' className='kasa__logo' />
                 <nav className='kasa__header--nav'>
                     <ul className='kasa__header--ul'>
-                    <li className='kasa__header--btn1'><Link to="/">Accueil</Link></li>
-                    <li className='kasa__header--btn2'><Link to="/Apropos">A propos</Link></li>
+                    <li className='kasa__header--acceuil'><Link to="/">Accueil</Link></li>
+                    <li className='kasa__header--apropos'><Link to="/Apropos">A propos</Link></li>
                     </ul>
                 </nav>			
             </div>

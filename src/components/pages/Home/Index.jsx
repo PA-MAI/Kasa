@@ -10,7 +10,7 @@ function Home() {
     // L'état pour stocker les logements
   const [logements, setLogements] = useState([]);
 
-  // Charger les logements depuis le fichier JSON
+  // Charge les logements depuis le fichier JSON
   useEffect(() => {
     fetch('/data/logements.json')
       .then((res) => res.json())
@@ -27,7 +27,7 @@ function Home() {
         </div>
         <div className="kasa__gallery--cart">
           <div>
-            {/* On passe les logements à la galerie */}
+            {/* passage des logements à la galerie */}
             <Gallery logements={logements} />
           </div>
         </div>

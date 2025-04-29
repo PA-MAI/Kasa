@@ -33,11 +33,14 @@
   width: 260px;
   padding-left: 0;
 }
-.kasa__header--btn1 {
+.kasa__header li :visited {
+  color: inherit;
+}
+.kasa__header--acceuil {
   cursor: pointer;
   font-size: 24px;
 }
-.kasa__header--btn2 {
+.kasa__header--apropos {
   cursor: pointer;
   font-size: 24px;
 }

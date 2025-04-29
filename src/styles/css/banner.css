@@ -1,13 +1,14 @@
 .kasa__banner {
   background-color: white;
-  max-width: 1280;
-  padding: 2rem;
 }
 .kasa__banner--banner {
+  max-width: 1240px;
   height: 222px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 26px;
+  margin-bottom: 26px;
 }
 .kasa__banner--img {
   height: 222px;

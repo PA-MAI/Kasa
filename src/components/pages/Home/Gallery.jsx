@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import '../../../styles/css/gallery.css'
-import { Link } from 'react-router-dom'
+
 // Galerie qui reçoit les logements en props et passe chaque logement à Card
 function Gallery({ logements }) {
     return (

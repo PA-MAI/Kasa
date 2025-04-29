@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../../../styles/css/logements.css'
+import Error from '../Error/';
+import Dropdown from '../../Dropdown';
 
-
+// const [showDescription, setShowDescription] = useState(false);
+// const [showEquipments, setShowEquipments] = useState(false);
 function Logements() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
   const [currentImage, setCurrentImage] = useState(0);
-  const [showDescription, setShowDescription] = useState(false);
-  const [showEquipments, setShowEquipments] = useState(false);
+ 
 
   useEffect(() => {
     fetch('/data/logements.json')
@@ -21,9 +23,9 @@ function Logements() {
       .catch(err => console.error('Erreur chargement JSON:', err));
   }, [id]);
 
-  if (!logement) return <p>Chargement...</p>;
+ if (!logement) return <div><Error /></div>;
 
-  const { cover, title, location, description, rating, tags, pictures, equipments, host } = logement;
+  const {  title, location, description, rating, tags, pictures, equipments, host } = logement;
   const images = [ ...pictures];
 
   const handlePrevImage = () => {
@@ -38,15 +40,18 @@ function Logements() {
     <div className="lgt__area">
         <div className="lgt__area--slider">
             <button className="lgt__chevron left" onClick={handlePrevImage}>‹</button>
-            <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} className="lgt__slider--image" />
+            <img src={images[currentImage]} alt={`${currentImage + 1}`} className="lgt__slider--image" />
             <div className="lgt__counter">{currentImage + 1} / {images.length} </div>
             <button className="lgt__chevron right" onClick={handleNextImage}>›</button>
         </div>
-
-        <h2>{title}</h2>
-        <h3>{location}</h3>
-        <div className="lgt__host">
-            <p>{host.name}<img src={host.picture} alt={host.name} /></p>
+        <div className="lgt__area--title">
+          <div>
+            <h2>{title}</h2>
+            <h3>{location}</h3>
+          </div>
+          <div className="lgt__host">
+              <span>{host.name}</span><span><img src={host.picture} alt={'Photo de ' + host.name} /></span>
+          </div>
         </div>
             <div className="lgt__details--tags">
             {tags.map((tag, index) => (
@@ -60,28 +65,18 @@ function Logements() {
           ))}
         </div>
 
-        <div className="lgt__dropdown">
-            <div className="lgt__dropdown--button">
-                <button onClick={() => setShowDescription(prev => !prev)}>
-                Description <span>{showDescription ? '˅' : '˄'}</span>
-                </button>
-                <div className={`lgt__dropdown--content ${showDescription ? 'open' : ''}`}>
-                <p>{description}</p>
-                </div>
-            </div>
-
-            <div className="lgt__dropdown--button">
-                <button onClick={() => setShowEquipments(prev => !prev)}>
-                Équipements <span>{showEquipments ? '˅' : '˄'}</span>
-                </button>
-                <div className={`lgt__dropdown--content ${showEquipments ? 'open' : ''}`}>
-                <ul>
-                    {equipments.map((item, index) => (
-                    <li key={index}>{item}</li>
-                    ))}
-                </ul>
-                </div>
-            </div>
+        <div className="lgt__dropdown" style={{ flexDirection: 'row' }}>
+          <Dropdown 
+            title="Description"
+            content={description}
+            direction="row" // Ici on spécifie que c'est en ligne
+          />
+          <Dropdown 
+            title="Équipements"
+            content={equipments}
+            direction="column" // En ligne
+            isList={true} // On indique que c'est une liste
+          />
         </div>
     </div>
   );

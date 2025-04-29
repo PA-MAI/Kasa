@@ -1,5 +1,4 @@
 body {
-  margin: 10;
   background-color: black;
 }
 
@@ -9,6 +8,10 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:visited {
+  color: inherit;
 }
 
 code {

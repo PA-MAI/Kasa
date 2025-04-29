@@ -1,4 +1,3 @@
-//import { useState, useEffect } from 'react'
 import '../../../styles/css/card.css'
 import React from 'react';
 import { Link } from 'react-router-dom'

@@ -24,6 +24,7 @@
     margin-bottom: 10px;
     width: 100%;
     }
+    
     &--nav{
         width: 260px;
     }
@@ -33,14 +34,17 @@
         justify-content: space-between;
         list-style-type: none;
         width: 260px;
-        
         padding-left: 0;
     }
-    &--btn1{
+    & li :visited {
+        color:inherit;
+      }
+    
+    &--acceuil{
         cursor: pointer;
         font-size: 24px;
     }
-    &--btn2{
+    &--apropos{
         cursor: pointer;
         font-size: 24px;
     }
