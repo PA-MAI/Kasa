@@ -1,6 +1,8 @@
 import React from 'react';
 import Dropdown from '../../Dropdown';
-import '../../../styles/css/apropos.css'
+import BannerModel from '../../BannerModel';
+import bannerImage from '../../../assets/img/montagnes.jpg'
+import '../../../styles/css/banner.css'
 
 const fiabiliteContent = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.";
 const respectContent = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.";
@@ -10,13 +12,26 @@ const securiteContent = "La sécurité est la priorité de Kasa. Aussi bien pour
 function Apropos() {
     
     return (
+      <div classname='kasa__banner' style={{
+        maxWidth:'1280px',
+        margin:'5%',
+      }}>
 
-        <div className="lgt__dropdown" style={{ flexDirection: 'column',
-                                                alignItems:'center',
-                                                alignContent:'center',
-                                                width:'100%',
-                                                height: 'auto',
-                                                gap: 40 }}>
+      <BannerModel
+        image={bannerImage}
+       
+      />
+      <div
+        className="lgt__dropdown"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 40,
+          width: '100%',
+          height:'auto',
+        }}
+      >
 
 
           <Dropdown 
@@ -44,6 +59,7 @@ function Apropos() {
             fullWidth={true} 
           />
         </div>
+      </div>
         
       );
     };

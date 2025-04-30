@@ -25,7 +25,7 @@ function Home() {
         <div>
           <Banner />
         </div>
-        <div className="kasa__gallery--cart">
+        <div className="kasa__gallery--card">
           <div>
             {/* passage des logements à la galerie */}
             <Gallery logements={logements} />
