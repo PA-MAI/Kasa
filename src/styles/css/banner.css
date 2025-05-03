@@ -1,17 +1,12 @@
-@charset "UTF-8";
 .kasa__banner {
   background-color: white;
-  width: 100%;
-  align-self: center;
   max-width: 1280px;
+  margin-top: 60px;
 }
 .kasa__banner--banner {
-  display: flex;
-  justify-content: center; /* Centre la bannière horizontalement */
-  align-items: center; /* Centre verticalement les éléments à l'intérieur */
   width: 100%;
   height: 222px;
-  margin-top: 26px;
+  margin-top: 46px;
   margin-bottom: 26px;
   position: relative; /* Assure que l'h1 reste au bon endroit */
 }
@@ -33,4 +28,8 @@
   z-index: 1;
   width: 100%;
   text-align: center;
+  font-size: 48px;
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
+  stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }

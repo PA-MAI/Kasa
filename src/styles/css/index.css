@@ -5,13 +5,12 @@
   background-color: white;
 }
 
+.kasa__parent {
+  padding: 10px;
+}
+
 .kasa__top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-content: center;
-  align-self: center;
   max-width: 1280px;
-  width: 100%;
   margin: 0 5% 0;
 }

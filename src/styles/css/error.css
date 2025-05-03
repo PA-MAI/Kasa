@@ -1,0 +1,19 @@
+.error {
+  display: flex;
+  flex-direction: column;
+}
+.error h1 {
+  font-size: 288px;
+  color: #ff6060;
+  margin: auto;
+}
+.error__oups {
+  font-size: 36px;
+  color: #ff6060;
+  font-weight: 600;
+}
+.error__accueil {
+  color: inherit;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}

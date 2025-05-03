@@ -4,9 +4,7 @@
 .lgt__area {
   display: flex;
   flex-direction: column;
-  margin: 10;
   width: 100%;
-  align-content: right;
 }
 .lgt__area--title {
   display: flex;
@@ -33,7 +31,6 @@
 .lgt__area--slider {
   position: relative;
   text-align: center;
-  align-content: right;
 }
 .lgt__slider--image {
   width: 100%;
@@ -157,6 +154,8 @@
   margin-left: 20px;
 }
 .lgt__details--rating {
+  display: flex;
+  justify-content: end;
   text-align: right;
   margin-right: 80px;
 }
@@ -166,7 +165,6 @@
 }
 .lgt__details--tags span {
   display: block;
-  width: fit-content;
   height: 20px;
   background-color: #ff6060;
   margin-right: 20px;
@@ -175,7 +173,6 @@
   padding: 2px;
   font-size: 14px;
   font-weight: 600;
-  text-align: 50%;
   width: 115px;
 }
 
@@ -184,4 +181,8 @@
   margin-right: 20px;
   height: 10px;
   width: 10px;
+}
+
+.rating {
+  text-align: right;
 }

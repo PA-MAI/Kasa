@@ -1,0 +1,22 @@
+$red: #ff6060;
+
+.error{
+    display:flex;
+    flex-direction:column;
+    
+& h1{
+    font-size: 288px;
+    color: $red;
+    margin:auto;
+}
+&__oups{
+    font-size: 36px;
+    color: $red;
+    font-weight: 600;
+}
+&__accueil{
+    color: inherit;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+}

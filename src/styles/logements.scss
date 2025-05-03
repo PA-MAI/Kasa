@@ -6,10 +6,8 @@ $red: #ff6060;
   &__area {
     display: flex;
     flex-direction: column;
-    //max-width: 1440px;
-    margin: 10;
     width: 100%;
-    align-content: right;
+    
 
     &--title{
       display:flex;
@@ -36,7 +34,7 @@ $red: #ff6060;
     &--slider {
       position: relative;
       text-align: center;
-      align-content: right;
+      
     }
   }
  
@@ -171,7 +169,6 @@ $red: #ff6060;
     width:20px;
     font-size:18px;
     font-weight: 500;
-    
 
 
     & img{
@@ -182,6 +179,8 @@ $red: #ff6060;
   }
   
   &__details--rating{
+    display: flex;
+    justify-content: end;
     text-align: right;
     margin-right: 80px;
   }
@@ -191,7 +190,6 @@ $red: #ff6060;
   }
   &__details--tags span{
     display:block;
-    width: fit-content;
     height: 20px;
     background-color: $red;
     margin-right: 20px;
@@ -200,7 +198,6 @@ $red: #ff6060;
     padding: 2px;
     font-size: 14px;
     font-weight: 600;
-    text-align: 50%;
     width: 115px;
 
   }
@@ -211,4 +208,7 @@ $red: #ff6060;
   margin-right: 20px;
   height: 10px;
   width: 10px;
+}
+.rating{
+  text-align: right;
 }
