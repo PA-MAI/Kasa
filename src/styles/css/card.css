@@ -30,6 +30,7 @@
   font-size: 18px;
   margin-top: 2px;
   color: black;
+  font-weight: 500;
 }
 .card__details--rating {
   display: flex;
@@ -86,4 +87,37 @@
 .grey {
   color: #E3E3E3;
   height: 10px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    width: 310px;
+    height: 255px;
+    margin-bottom: 0;
+  }
+  .card__cover {
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card__details {
+    padding: 10px;
+  }
+  .card__details h2 {
+    color: #FF6060;
+    font-size: 14px;
+    margin: 0;
+    height: 22px;
+  }
+  .card__details p {
+    font-size: 12px;
+    margin-bottom: 2px;
+    color: black;
+    margin-top: 14px;
+    font-weight: 600;
+  }
+  .card__details--rating {
+    justify-content: left;
+  }
 }

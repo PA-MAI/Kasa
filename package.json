@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://PA-MAI.github.io/kasa",
+  
   "scripts": {
+    
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --port 5001"
   },
   "dependencies": {
     "@babel/core": "^7.26.9",

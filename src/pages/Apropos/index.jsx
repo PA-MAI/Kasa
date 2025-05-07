@@ -3,6 +3,7 @@ import Dropdown from '../../components/Dropdown'
 import BannerModel from '../../components/BannerModel'
 import bannerImage from '../../assets/img/montagnes.jpg'
 import '../../styles/css/banner.css'
+import '../../styles/css/apropos.css'
 
 const items = [
    {
@@ -33,9 +34,10 @@ function Apropos() {
          className="kasa__banner"
          style={{
             maxWidth: '1280px',
-            margin: '5%',
+            margin: ' 20px 5%',
          }}
       >
+     
          <BannerModel image={bannerImage} />
 
          <div
@@ -44,9 +46,9 @@ function Apropos() {
                display: 'flex',
                flexDirection: 'column',
                alignItems: 'center',
-               gap: 40,
                width: '100%',
                height: 'auto',
+               gap:'0',
             }}
          >
             {items.map(({ title, content }) => (
@@ -56,9 +58,11 @@ function Apropos() {
                   content={content}
                   direction="column"
                   fullWidth={true}
+                  
                />
             ))}
          </div>
+        
       </div>
    )
 }

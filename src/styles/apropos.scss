@@ -1,0 +1,35 @@
+.kasa__banner{
+  margin-bottom: 0 ;
+}
+.lgt__dropdown{
+  margin-bottom: 40px ;
+  
+}
+
+.lgt__dropdown--button {
+  margin-bottom: 20px ;
+   & button{
+    font-size: 24px ;
+    font-weight: 600;
+  }
+}
+.kasa__footer{
+  margin-top: 0;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+.lgt__dropdown{
+  
+  margin:20px 0 0 !important;
+  &--content {
+    flex-direction: column;
+  }
+  &--button {
+  margin-bottom: 20px !important;
+    & button{
+    font-size: 12px !important;
+    }
+  }
+}
+}

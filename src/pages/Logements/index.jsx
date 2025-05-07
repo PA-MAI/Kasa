@@ -7,19 +7,24 @@ import Rating from '../../components/Rating'
 function Logements() {
    const { id } = useParams()
    const [logement, setLogement] = useState(null)
+   const [isLoading, setIsLoading] = useState(true)
    const [currentImage, setCurrentImage] = useState(0)
 
    useEffect(() => {
+      setIsLoading(true) // début du chargement
       fetch('/data/logements.json')
          .then((res) => res.json())
          .then((data) => {
             const selected = data.find((item) => item.id === id)
             setLogement(selected)
             setCurrentImage(0) // reset image index
+            setIsLoading(false) // chargement terminé
          })
          .catch((err) => console.error('Erreur chargement JSON:', err))
+         setIsLoading(false)
    }, [id])
 
+   if (isLoading) return <div>Chargement...</div>
    if (!logement) return <Error />
 
    const {
@@ -82,17 +87,23 @@ function Logements() {
                </span>
             </div>
          </div>
-         <div className="lgt__details--tags">
+         <div className="lgt__area--details">
+            <span className="lgt__details--tags">
             {tags.map((tag, index) => (
+               
                <span key={index} className="tag">
                   {tag}
-               </span>
+                  </span>
+                 
             ))}
+            </span>
+            {/* Reprend le composant rating */}
+            <div className="lgt__details--rating">
+               <Rating rating={rating} />
+            </div>
          </div>
-         <div className="lgt__details--rating">
-             <Rating rating={rating} />
-         </div>
-
+         
+         {/* Reprend le composant dropdown et personalisation du texte*/}
          <div className="lgt__dropdown" style={{ flexDirection: 'row' }}>
             <Dropdown
                title="Description"

@@ -10,17 +10,16 @@ import Logements from './pages/Logements'
 import './styles/css/main.css'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Router>
-    <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Logements/:id" element={<Logements />} />
-        <Route path="/Apropos" element={<Apropos />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
-    </Router>
-  </StrictMode>,
+   <StrictMode>
+      <Router>
+         <Header />
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Logements/:id" element={<Logements />} />
+            <Route path="/Apropos" element={<Apropos />} />
+            <Route path="*" element={<Error />} />
+         </Routes>
+         <Footer />
+      </Router>
+   </StrictMode>,
 )
-

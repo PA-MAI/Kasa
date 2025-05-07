@@ -1,0 +1,34 @@
+.kasa__banner {
+  margin-bottom: 0;
+}
+
+.lgt__dropdown {
+  margin-bottom: 40px;
+}
+
+.lgt__dropdown--button {
+  margin-bottom: 20px;
+}
+.lgt__dropdown--button button {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.kasa__footer {
+  margin-top: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .lgt__dropdown {
+    margin: 20px 0 0 !important;
+  }
+  .lgt__dropdown--content {
+    flex-direction: column;
+  }
+  .lgt__dropdown--button {
+    margin-bottom: 20px !important;
+  }
+  .lgt__dropdown--button button {
+    font-size: 12px !important;
+  }
+}

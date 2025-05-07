@@ -11,6 +11,21 @@
     padding: 3%;
     background-color: #F6F6F6;
     border-radius: 20px;
+    margin-bottom: 20px;
     
 
   }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .kasa__gallery{
+    margin: 0 ;
+    max-width: 480px;
+    &--card {
+      background-color: white;
+      padding:0;
+      gap:2%;
+      overflow-y: scroll;
+      scrollbar-color:  #FF6060 grey;
+      scrollbar-width: thin;
+    }
+  }
+}

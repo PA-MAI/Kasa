@@ -11,9 +11,28 @@
   font-size: 36px;
   color: #ff6060;
   font-weight: 600;
+  margin: 120px;
 }
 .error__accueil {
   color: inherit;
   text-decoration: underline;
   margin-bottom: 40px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .error {
+    margin-bottom: 40px;
+  }
+  .error h1 {
+    font-size: 96px;
+    margin: 20%;
+  }
+  .error__oups {
+    font-size: 18px;
+    margin: 40px;
+  }
+  .error__accueil {
+    font-size: 14px;
+    margin: 15%;
+  }
 }

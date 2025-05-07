@@ -6,6 +6,7 @@ const Dropdown = ({
    direction = 'column',
    isList = false,
    fullWidth = false,
+   customStyle = {},
 }) => {
    const [showContent, setShowContent] = useState(false)
 
@@ -14,10 +15,12 @@ const Dropdown = ({
    return (
       <div
          className={`lgt__dropdown--button ${direction}`}
-         style={{ width: fullWidth ? '80%' : '40%' }} // Applique 80% de largeur si fullWidth est true
+         style={{ width: fullWidth ? '80%' : '50%' } } // Applique 80% de largeur si fullWidth est true
+         
       >
-         <button onClick={toggleContent}>
+         <button onClick={toggleContent} style={customStyle}>
             {title} <span>{showContent ? '˅' : '˄'}</span>
+            
          </button>
          <div className={`lgt__dropdown--content ${showContent ? 'open' : ''}`}>
             {isList ? (

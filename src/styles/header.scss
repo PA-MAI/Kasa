@@ -3,19 +3,19 @@
     align-content: center;
     height: 80px;
     max-width: 1280px;
-    margin: 0 5% 0;
+    margin: 45px 5% 0;
+    padding: 10px;
 
-  &--logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between ;
-    align-items: center;
-    align-content: center;
-    margin: 4cqh 0 40px ;
-    font-weight: 500;
-    height: 68px;
-    width: 100%;
-    padding-left: 10px;
+    &--logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between ;
+        align-items: center;
+        align-content: center;
+        font-weight: 500;
+        height: 68px;
+        width: 100%;
+   
     }
     
     &--nav{
@@ -50,4 +50,35 @@ width: 210px;
 }
 .underline {
     text-decoration: underline;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+.kasa__header{
+    max-width: 480px;
+    margin:10px;
+    padding: 0;
+    &--ul{
+        width: auto;
+    }
+
+    &--acceuil{
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    &--apropos{
+        font-size: 12px;
+    }
+}
+.kasa__logo{
+    height: 47px;
+    width: 145px;
+}
+.link {
+   
+    text-transform: uppercase;
+}
+.underline {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
 }

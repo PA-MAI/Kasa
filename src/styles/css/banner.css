@@ -6,8 +6,8 @@
 .kasa__banner--banner {
   width: 100%;
   height: 222px;
-  margin-top: 46px;
-  margin-bottom: 26px;
+  margin-top: 45px;
+  margin-bottom: 40px;
   position: relative; /* Assure que l'h1 reste au bon endroit */
 }
 .kasa__banner--img {
@@ -18,10 +18,11 @@
   filter: brightness(50%);
   display: block;
   margin: 0 auto;
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
 }
 .kasa__banner--banner h1 {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -32,4 +33,29 @@
   text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
   stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .kasa__top {
+    margin: 5px;
+    width: 97%;
+  }
+  .kasa__banner {
+    max-width: 480px;
+    margin: 0 1% 0 !important;
+  }
+  .kasa__banner--img {
+    height: 111px;
+  }
+  .kasa__banner--banner {
+    margin-top: 10px;
+    height: 111px;
+    margin-bottom: 0;
+  }
+  .kasa__banner--banner h1 {
+    font-size: 24px;
+    top: 35%;
+    text-align: left;
+    margin: 20px;
+  }
 }
