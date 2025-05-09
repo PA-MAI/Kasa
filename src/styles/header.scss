@@ -59,11 +59,13 @@ width: 210px;
     padding: 0;
     &--ul{
         width: auto;
+        padding-left: 10px;
+        justify-content: space-around;
     }
 
     &--acceuil{
         font-size: 12px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
     &--apropos{
         font-size: 12px;

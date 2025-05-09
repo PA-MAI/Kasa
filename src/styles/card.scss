@@ -100,11 +100,12 @@
 }  
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .card{
-    width: 310px;
+    width: 320px;
     height: 255px;
     margin-bottom: 0;
     
     &__cover {
+    width: 320px;
     height: 160px;
     object-fit: cover;
     border-top-left-radius: 10px;

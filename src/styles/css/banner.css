@@ -53,8 +53,10 @@
     margin-bottom: 0;
   }
   .kasa__banner--banner h1 {
+    width: 230px;
     font-size: 24px;
     top: 35%;
+    left: 40%;
     text-align: left;
     margin: 20px;
   }

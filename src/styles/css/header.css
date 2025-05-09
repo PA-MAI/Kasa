@@ -57,10 +57,12 @@
   }
   .kasa__header--ul {
     width: auto;
+    padding-left: 10px;
+    justify-content: space-around;
   }
   .kasa__header--acceuil {
     font-size: 12px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .kasa__header--apropos {
     font-size: 12px;

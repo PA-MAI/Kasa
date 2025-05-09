@@ -9,7 +9,7 @@
 }
 .lgt__area--title {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .lgt__area--title h2 {
@@ -33,6 +33,10 @@
 .lgt__area--details {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+.lgt__area--h3tag {
+  text-align: left;
 }
 .lgt__slider--image {
   width: 100%;
@@ -111,7 +115,7 @@
   align-items: center;
   margin-top: 20px;
   justify-content: end;
-  width: 20px;
+  width: 150px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -122,11 +126,13 @@
 }
 .lgt__details--rating {
   display: flex;
-  justify-content: end;
-  text-align: right;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
 }
 .lgt__details--tags {
   display: flex;
+  text-align: center;
 }
 .lgt__details--tags span {
   display: block;
@@ -146,10 +152,6 @@
   margin-right: 20px;
   height: 10px;
   width: 10px;
-}
-
-.rating {
-  text-align: right;
 }
 
 .lgt__dropdown--content {
@@ -184,11 +186,12 @@
   margin-bottom: 4rem;
 }
 
+.rating {
+  text-align: right;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .lgt__host {
-    position: absolute;
-    right: 3%;
-    top: 61%;
     margin-top: 0;
   }
   .lgt__host span {
@@ -211,10 +214,11 @@
   .lgt__area--title h2 {
     font-size: 18px;
     font-weight: 500;
-    height: 40px;
   }
   .lgt__area--title h3 {
+    margin-top: 0;
     font-size: 14px;
+    font-weight: 400;
   }
   .lgt__area--details {
     flex-direction: column;
@@ -253,8 +257,10 @@
     font-weight: 500;
   }
   .lgt__details--rating {
-    margin-top: 20px;
-    justify-content: start;
+    margin-top: 16px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   .lgt__dropdown {
     flex-direction: column !important;
