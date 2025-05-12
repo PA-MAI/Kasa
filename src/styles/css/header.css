@@ -52,13 +52,15 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .kasa__header {
     max-width: 480px;
-    margin: 10px;
+    margin: 0 5% 0;
     padding: 0;
   }
   .kasa__header--ul {
     width: auto;
-    padding-left: 10px;
-    justify-content: space-around;
+    justify-content: flex-end;
+  }
+  .kasa__header--ul li {
+    margin-left: 20px;
   }
   .kasa__header--acceuil {
     font-size: 12px;

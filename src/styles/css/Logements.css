@@ -202,8 +202,9 @@
     height: 32px;
   }
   .lgt__area {
-    margin: 20px 2px;
-    width: 98%;
+    margin: 20px 5% 2px;
+    width: 91%;
+    max-width: 480px;
   }
   .lgt__area--slider {
     height: 255px;

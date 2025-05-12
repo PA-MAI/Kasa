@@ -232,8 +232,9 @@ $red: #ff6060;
     }
   }
   &__area{
-  margin: 20px 2px;
-  width: 98%;
+  margin: 20px 5% 2px;
+  width: 91%;
+  max-width: 480px;
     &--slider{
       height: 255px;
       & img{
