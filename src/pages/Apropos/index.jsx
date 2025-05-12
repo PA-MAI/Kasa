@@ -33,7 +33,7 @@ function Apropos() {
       <div
          className="kasa__banner"
          style={{
-            maxWidth: '1280px',
+            maxWidth: '1240px',
             margin: ' 20px 5%',
          }}
       >

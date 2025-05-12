@@ -1,12 +1,12 @@
 .kasa__banner {
   background-color: white;
-  max-width: 1280px;
+  max-width: 1240px;
   margin-top: 60px;
 }
 .kasa__banner--banner {
   width: 100%;
   height: 222px;
-  margin-top: 45px;
+  margin-top: 25px;
   margin-bottom: 40px;
   position: relative; /* Assure que l'h1 reste au bon endroit */
 }
@@ -37,8 +37,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .kasa__top {
-    margin: 5px;
-    width: 97%;
+    width: 100%;
   }
   .kasa__banner {
     max-width: 480px;
@@ -46,6 +45,7 @@
   }
   .kasa__banner--img {
     height: 111px;
+    border-radius: 10px;
   }
   .kasa__banner--banner {
     margin-top: 10px;

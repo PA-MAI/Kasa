@@ -6,14 +6,14 @@
     background-color: white;
  }
  .kasa__parent{
-    padding:10px;
+  max-width: 1240px;
+  margin: 0 5% 0;
+  
  }
 
 .kasa__top {
    
     align-content: center;
-    max-width: 1280px;
-    margin: 0 auto;
     width: 100%;
 
 }
@@ -23,6 +23,7 @@
     max-width: 480px;
   }
   .kasa__parent {
+    width: 90%;
     padding:0;
   }
   
