@@ -24,7 +24,7 @@ function Logements() {
          .catch((err) => console.error('Erreur chargement JSON:', err))
          setIsLoading(false)
    }, [id])
-
+// si le réseau est lent , l'application affiche Chargement.. si pas de logement affiche 404
    if (isLoading) return <div>Chargement...</div>
    if (!logement) return <Error />
 
@@ -41,6 +41,7 @@ function Logements() {
 
    return (
       <div className="lgt__area">
+         {/* Reprend le composant Slider */}
          <Slider slider={Slider} />
 
          <div className="lgt__area--details">
@@ -51,15 +52,13 @@ function Logements() {
                </div>
                <span className="lgt__details--tags">
                {tags.map((tag, index) => (
-                  
                   <span key={index} className="tag">
                      {tag}
-                     </span>
-                  
+                  </span>
                ))}
                </span>
             </div>
-            
+
             {/* Reprend le composant rating */}
             <div className="lgt__details--rating">
                <div className="lgt__host">
@@ -71,7 +70,7 @@ function Logements() {
                      <Rating rating={rating} />
                   </div>
             </div>
-           
+
          {/* Reprend le composant dropdown et personalisation du texte*/}
          <div className="lgt__dropdown" style={{ flexDirection: 'row' }}>
             <Dropdown

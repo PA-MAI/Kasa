@@ -50,12 +50,15 @@ $red: #ff6060;
  
 
   &__slider--image {
+    display: block;
     width: 100%;
-    max-width: 1280px;
-    max-height: 400px;
+    max-width: 1240px;
+    height: 415px;
     object-fit: cover;
     margin-top: 40px;
     border-radius: 20px;
+    
+    
   }
 &__chevron {
     position: absolute;
@@ -228,6 +231,7 @@ $red: #ff6060;
       font-size: 12px;
       img{
         height: 32px;
+        
       }
     }
   }
@@ -240,6 +244,7 @@ $red: #ff6060;
       & img{
         height: 255px;
         margin: 0;
+        object-fit: cover;
       }
     }
     &--title{
@@ -291,7 +296,6 @@ $red: #ff6060;
         top: 50%;
         height: auto;
         margin-right: 18px;
-        padding: 0px;
         font-size: 10px;
         width: 84px;
         font-weight: 500;

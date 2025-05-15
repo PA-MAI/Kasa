@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/Home/'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Apropos from './pages/Apropos'

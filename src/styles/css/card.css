@@ -103,20 +103,22 @@
     border-top-right-radius: 10px;
   }
   .card__details {
-    padding: 10px;
+    padding: 2px 5px;
   }
   .card__details h2 {
     color: #FF6060;
-    font-size: 14px;
-    margin: 0;
+    font-size: 18px;
+    margin-top: 5px;
     height: 22px;
+    font-weight: 500;
+    margin-top: 0;
   }
   .card__details p {
     font-size: 12px;
-    margin-bottom: 2px;
     color: black;
-    margin-top: 14px;
-    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
   }
   .card__details--rating {
     justify-content: left;
