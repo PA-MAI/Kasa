@@ -87,10 +87,11 @@ $red: #ff6060;
     right: 50%;
     color: white;
     transform: translateY(-50%);
-    background: $red;
+    /*background: $red;*/
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
+    font-weight: 500;
   }
   
   &__dropdown {
@@ -138,7 +139,11 @@ $red: #ff6060;
     width:150px;
     font-size:18px;
     font-weight: 500;
-
+    &--name{
+      display:flex;
+      flex-direction: column;
+      text-align: right;
+    }
 
     & img{
       border-radius: 50%;
@@ -152,12 +157,13 @@ $red: #ff6060;
       display: flex;
       flex-direction: column;
       justify-content:space-between;
-      align-items: end;
+      align-content: end;
+      margin-top: 10px;
+      
     }
     &--tags{
       display: flex;
       text-align: center;
-      margin-top: 10px;
       
     }
     &--tags span{

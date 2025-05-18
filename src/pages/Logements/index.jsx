@@ -37,8 +37,10 @@ function Logements() {
       equipments,
       host,
    } = logement
-
-
+//console.log (host.name)
+   const nameParts = host.name.split(" ");
+   const firstName = nameParts[0];
+   const lastName = nameParts.slice(1).join(" ");
    return (
       <div className="lgt__area">
          {/* Reprend le composant Slider */}
@@ -62,7 +64,10 @@ function Logements() {
             {/* Reprend le composant rating */}
             <div className="lgt__details--rating">
                <div className="lgt__host">
-               <span>{host.name}</span>
+                  <span className="lgt__host--name">
+                     <span className="lgt__host--firstname">{firstName}</span>
+                     <span className="lgt__host--lastname">{lastName}</span>
+                  </span>
                   <span>
                      <img src={host.picture} alt={'Photo de ' + host.name} />
                   </span>
